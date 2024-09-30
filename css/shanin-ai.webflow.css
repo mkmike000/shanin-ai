@@ -1,0 +1,220 @@
+:root {
+  --accessible-components--dark-grey: #9b9b9b;
+  --white: white;
+}
+
+body {
+  color: #333;
+  background-color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3.6rem;
+}
+
+.fs_checkbox-7_message {
+  color: var(--accessible-components--dark-grey);
+}
+
+.fs_checkbox-7_mask {
+  z-index: 1;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  position: absolute;
+  inset: 0%;
+}
+
+.fs_checkbox-7_label {
+  margin-bottom: 0;
+  font-weight: 500;
+  display: none;
+}
+
+.fs_checkbox-7_button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  inset: 0%;
+}
+
+.fs_checkbox-7_button:focus-visible {
+  outline-offset: 4px;
+  outline: 2px solid #9b9b9b;
+}
+
+.fs_checkbox-7_button[data-wf-focus-visible] {
+  outline-offset: 4px;
+  outline: 2px solid #9b9b9b;
+}
+
+.fs_checkbox-7_dot {
+  z-index: 2;
+  background-color: #ddd;
+  border-radius: 4px;
+  flex: none;
+  width: 4rem;
+  height: 2rem;
+  margin-top: .5rem;
+  margin-left: .5rem;
+  display: block;
+  position: absolute;
+  inset: 0% auto 0% 0%;
+}
+
+.fs_checkbox-7_text-off {
+  z-index: 3;
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.fs_checkbox-7_text-on {
+  z-index: 3;
+  position: relative;
+}
+
+.fs_checkbox-7_wrapper {
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: .5rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 8rem;
+  height: 3rem;
+  margin-bottom: 0;
+  padding: .25rem 1.25rem;
+  font-size: .85rem;
+  font-weight: 500;
+  display: flex;
+  position: relative;
+}
+
+.fs_checkbox-7_component {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.button {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border: 2px #fff;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  padding: .75rem 1.5rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration: none;
+  transition: transform .3s, background-color .4s;
+  display: flex;
+}
+
+.button:hover {
+  color: #000;
+  background-color: #fff;
+  transform: scale(1.025);
+}
+
+.button.center {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.secondary, .button.secondary.w--current {
+  filter: invert();
+}
+
+.button-icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: .2rem;
+  display: flex;
+}
+
+.icon-embed-xxsmall {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+}
+
+.section._100vh {
+  height: 100vh;
+}
+
+.section.brain-hero {
+  color: var(--white);
+  background-image: linear-gradient(#000c, #000c), url('../images/cristian-palmer-RR29P0uLQms-compressed.jpg');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 100vh;
+}
+
+.section.hero {
+  color: var(--white);
+  background-image: linear-gradient(#000c, #000c), url('../images/vackground-com-agUC-v_D1iI-compressed.jpg');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 100vh;
+}
+
+.wrapper.max-wrapper.is-flex {
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.wrapper.max-wrapper.is-flex.brain {
+  color: var(--white);
+  background-image: url('../images/cristian-palmer-RR29P0uLQms-unsplash.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.max-wrapper {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    letter-spacing: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    line-height: 1rem;
+  }
+}
+
+
